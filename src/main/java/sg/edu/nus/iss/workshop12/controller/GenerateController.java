@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import sg.edu.nus.iss.workshop12.exception.RandomNumberException;
 import sg.edu.nus.iss.workshop12.model.Generate;
 
+// heroku link is https://git.heroku.com/morning-river-57931.git
+
 @Controller
 public class GenerateController {
     private Logger logger = LoggerFactory.getLogger(GenerateController.class);
@@ -61,7 +63,7 @@ public class GenerateController {
             }
             model.addAttribute("randNumsResult", selectedImg.toArray());
             model.addAttribute("numInputByUser", numberRandomNumbers);
-            
+
         } catch (RandomNumberException e) {
             model.addAttribute("errorMessage", "Error, more than 10 numbers");
             return "error";
