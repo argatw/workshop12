@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import sg.edu.nus.iss.workshop12.exception.RandomNumberException;
 import sg.edu.nus.iss.workshop12.model.Generate;
 
-// heroku link is https://git.heroku.com/morning-river-57931.git
+// heroku link is https://git.heroku.com/blooming-mountain-09534.git
 
 @Controller
 public class GenerateController {
